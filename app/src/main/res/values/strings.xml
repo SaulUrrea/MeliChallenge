@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">MeliChallenge</string>
+    <string name="image_from_network">Image from network</string>
+    <string name="search_button">Search Button</string>
+    <string name="close_button">Close Button</string>
+    <string name="back_button">Back Button</string>
+    <string name="back_arrow">Back Arrow</string>
+    <string name="characteristics">Características del producto</string>
+    <string name="see_more_icon">See more icon</string>
+    <string name="see_less">Ver menos</string>
+    <string name="see_more">Ver más</string>
+    <string name="detail_product">Detalles del producto</string>
+    <string name="free_shipping">Envío Gratis</string>
+    <string name="shipping_with_cost">Envío con Costo</string>
+    <string name="seller">Vendedor</string>
+    <string name="illustration">Illustration</string>
+    <string name="enter_product_name">Por favor, ingresa el nombre de un producto para comenzar.</string>
+    <string name="error_message">¡Ups! Hubo un problema al conectarse.</string>
+    <string name="not_found_results">No se encontraron resultados</string>
+    <string name="meli_challenge">Meli Challenge</string>
+    <string name="product_name">Nombre del producto</string>
+    <string name="location">Location</string>
+    <string name="shoppingcart">ShoppingCart</string>
+    <string name="location_item">Ubicación</string>
+    <string name="email">Correo electrónico: %1$s</string>
+    <string name="seller_info">Información de contacto</string>
+    <string name="phone">Teléfono: %1$s</string>
+    <string name="web_page">Página web: </string>
+    <string name="web_site">Sitio Oficial</string>
 </resources>

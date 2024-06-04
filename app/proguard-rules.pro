@@ -19,3 +19,22 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# Dagger Hilt
+-dontwarn javax.annotation.**
+-dontwarn javax.inject.**
+-dontwarn javax.inject.*
+-dontwarn javax.annotation.*
+-keep @javax.annotation.* class * {*;}
+-keep @javax.inject.* class * {*;}
+-keep class dagger.hilt.*
+-keep class dagger.hilt.android.*
+-keep class dagger.hilt.internal.*
+-keep class dagger.hilt.migration.*
+-keep class dagger.assisted.*
+-keep class javax.inject.*
+-keep class javax.inject.*
+-keep class javax.annotation.*
+-keepclasseswithmembers class * {
+    @dagger.hilt.* <methods>;
+}
