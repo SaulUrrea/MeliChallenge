@@ -31,6 +31,9 @@ class GetItemByNameUseCase @Inject constructor(
 ) : IGetItemByNameUseCase {
 
     override suspend fun invoke(name: String): Result<ItemsResponseModel> {
+        if (name.isBlank()) {
+            return Result.failure(Exception("Name cannot be empty"))
+        }
         return repository.searchItemByName(name)
     }
 

@@ -19,6 +19,10 @@ composeBom = "2024.05.00"
 junit = "4.13.2"
 junitVersion = "1.1.5"
 espressoCore = "3.5.1"
+kotlinCorutinesTest = "1.7.1"
+turbine = "0.12.1"
+mockk = "1.13.4"
+coreTesting = "2.2.0"
 
 #Hilt
 hilt = "2.51.1"
@@ -37,6 +41,7 @@ runtimeLivedata = "1.6.7"
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 
 # Testing Libraries
+androidx-core-testing = { module = "androidx.arch.core:core-testing", version.ref = "coreTesting" }
 androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
 auto-value = { module = "com.google.auto.value:auto-value", version.ref = "autoValueAnnotations" }
 auto-value-annotations = { module = "com.google.auto.value:auto-value-annotations", version.ref = "autoValueAnnotations" }
@@ -46,6 +51,9 @@ hilt-android-gradle-plugin = { module = "com.google.dagger:hilt-android-gradle-p
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinCorutinesTest"}
+turbine = { module = "app.cash.turbine:turbine", version.ref = "turbine" }
+mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
 
 # Lifecycle and Activity Libraries
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
@@ -87,6 +95,3 @@ jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "k
 
 # Dagger Hilt
 daggerHilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
-
-# Parcelize
-kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }

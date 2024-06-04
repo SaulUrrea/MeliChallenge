@@ -44,7 +44,6 @@ class DetailItemViewModel @Inject constructor(
                     }
                 }
                 .onFailure {
-                    Log.e("Error", "getPicturesForItem: ", it)
                     _DetailItemViewState.update { DetailItemViewState.Error }
                 }
         }

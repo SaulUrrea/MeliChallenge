@@ -1,6 +1,5 @@
 package com.saulodev.melichallenge.ui.home.viewmodels
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.saulodev.melichallenge.domain.usecases.IGetItemByNameUseCase
@@ -64,7 +63,6 @@ class SearchViewModel @Inject constructor(
                             }
                         }
                         .onFailure {
-                            Log.e("Error", "initialize: ", it)
                             _Search_viewState.update { SearchViewState.Error }
                         }
                 }

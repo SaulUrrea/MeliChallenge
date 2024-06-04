@@ -51,6 +51,9 @@ android {
             excludes += "META-INF/gradle/incremental.annotation.processors"
         }
     }
+    testOptions {
+        unitTests.isReturnDefaultValues = true
+    }
 }
 
 kapt {
@@ -58,7 +61,7 @@ kapt {
 }
 
 dependencies {
-    implementation(libs.androidx.runtime.livedata)
+
     // Annotations
     compileOnly(libs.auto.value.annotations)
     kapt(libs.auto.value)
@@ -75,6 +78,7 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.runtime.livedata)
 
     // Hilt
     implementation(libs.hilt.android)
@@ -97,6 +101,12 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.ui.test.junit4)
+
+    //Test Courtliness
+    testImplementation (libs.kotlinx.coroutines.test)
+    testImplementation (libs.androidx.core.testing)
+    testImplementation (libs.mockk)
+    testImplementation (libs.turbine)
 
     // Debugging
     debugImplementation(libs.androidx.ui.tooling)
