@@ -6,7 +6,7 @@ Este proyecto forma parte de un desafío para Mercado Libre. Consiste en una apl
 buscar artículos, ver sus detalles y navegar al sitio web oficial para obtener más información.
 
 # Apk
-
+Descarga la última versión de la aplicación [aquí](https://github.com/SaulUrrea/MeliChallenge/blob/development/resultImages/app-meli.apk).
 
 ## UI
 
